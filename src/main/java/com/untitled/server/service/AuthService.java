@@ -59,8 +59,6 @@ public class AuthService {
         return false;
     }
 
-
-
     public Date plusTwoWeeks(Date userCreated){
         Calendar c = Calendar.getInstance();
         c.setTime(userCreated);
@@ -90,9 +88,6 @@ public class AuthService {
     }
 
     public ResponseEntity<String> login(User user, LoginRequest loginRequest, HttpServletResponse res) {
-
-
-
         String username = loginRequest.getUsername().toLowerCase();
 
         Authentication authentication = authenticationManager

@@ -1,6 +1,5 @@
 package com.untitled.server.domain.content;
 
-import com.sun.org.apache.xalan.internal.xsltc.dom.ArrayNodeListIterator;
 import com.untitled.server.domain.auth.User;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -37,8 +36,6 @@ public class Post {
 
     @Column
     private ArrayList starList;
-
-
 
     public Post (){}
 
